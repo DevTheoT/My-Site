@@ -1,0 +1,246 @@
+@font-face {
+    font-family: Product-Sans;
+    src: url(Fonts/Product\ Sans\ Bold.ttf);
+}
+
+@font-face {
+    font-family: Product-Sans B;
+    src: url(Fonts/Product\ Sans\ Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Product-Sans;
+}
+
+html,
+body{
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+}
+
+.nav-container{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    padding: 0 3vw;
+    z-index: 99;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 50px;
+    font-size: 24px;
+}
+
+.nav-container a{
+    color: white;
+    text-decoration: none;
+}
+.nav-container img{
+    width: 25px;
+    object-fit: cover;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg, rgb(0, 255, 34),rgb(0, 133, 77));
+}
+
+.hero h1{
+    font-size: 15vw;
+    color: white;
+}
+
+#roblox{
+    position: absolute;
+    width: 15%;
+    top: 10%;
+    left: 7%;
+    transform: rotate(25deg);
+    z-index: 2;
+}
+
+#html{
+    position: absolute;
+    width: 15%;
+    top: 10%;
+    z-index: 2;
+}
+
+#lua{
+    position: absolute;
+    width: 10%;
+    top: 40%;
+    right: 7%;
+    transform: rotate(-25deg);
+    z-index: 2;
+}
+
+#python{
+    position: absolute;
+    width: 10%;
+    top: 60%;
+    right: 7%;
+    transform: rotate(25deg);
+    z-index: 2;
+}
+
+#godot{
+    position: absolute;
+    width: 10%;
+    top: 60%;
+    left: 7%;
+    transform: rotate(-25deg);
+    z-index: 2;
+}
+
+#java{
+    position: absolute;
+    width: 10%;
+    top: 70%;
+    z-index: 2;
+}
+
+/* Editando segunda sessão */
+.two{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #457c45;
+}
+
+.left-side, .right-side{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+    height: 100%;
+}
+
+.right-side h2{
+    color: white;
+    font-size: 5vw;
+}
+
+.left-side img{
+    position: absolute;
+    left: 13%;
+    width: 20%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.right-side p{
+    color: white;
+    font-size: 1.3vw;
+    width: 95%;
+}
+
+/* Estilizando terceira sessão */
+.three{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 200vh;
+    gap: 5vh;
+    background: linear-gradient(150deg, rgb(0, 255, 34),rgb(0, 133, 77));
+}
+
+.card{
+    position: relative;
+    display: flex;
+    background: white;
+    align-items: center;
+    width: 30%;
+    flex-direction: column;
+    gap: 2vh;
+    height: 70vh;
+    margin-top: 10vh;
+    border-radius: 20px;
+}
+
+.card h3{
+    margin-top: 10vh;
+    font-size: 3vw;
+    color: black;
+}
+
+.card video {
+    margin-top: 50px;
+    width: 100%;        /* ocupa quase todo o card */
+    max-width: 350px;  /* limite pra não ficar gigante */
+    height: auto;
+    border-radius: 12px; /* cantos arredondados */
+}
+
+#vdfivem video {
+    margin-top: 50px;
+    width: 40%;        /* ocupa quase todo o card */
+    max-width: 500px;  /* limite pra não ficar gigante */
+    height: auto;
+    border-radius: 12px; /* cantos arredondados */
+}
+#vdfivem h3, p {
+    margin-top: 1px;
+    font-size: 2vw;
+    color: black;
+}
+
+.card button{
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(51, 255, 0);
+    color: white;
+    padding: 1vw 2vw;
+}
+
+.three img{
+    width: 50px;
+}
+
+.contacmenu{
+    display: none;
+    flex-direction: column; /* empilha verticalmente */
+    align-items: center; /* centraliza se quiser */
+    gap: 10px; /* espaço entre os links */
+    position: absolute;
+    margin-top: 25vh;
+    right: 50vh;
+    background-color: rgba(25, 68, 15, 0.473);
+    padding: 10vw 20vw;
+    border-radius: 10px;
+}
+
+.contacmenu.active {
+    display: block;
+}
+
+.contacmenu a{
+    font-size: 2vw;
+    color: white;
+    text-decoration: none;
+}
